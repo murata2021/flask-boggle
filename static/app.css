@@ -1,0 +1,26 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+
+.board {
+
+    margin-top:0.5in;
+    margin-left: 2in;
+    background-color:#115ff4 ;
+    text-align: center; 
+    color:whitesmoke
+  }
+  
+  .board td {
+  
+    width: 43px;
+    height: 43px;
+    border: solid 1px #666;
+    text-emphasis: bold;
+
+  }

@@ -1,0 +1,6 @@
+/venv
+boggle.py:Zone.Identifier
+test.py:Zone.Identifier
+app.py:Zone.Identifier
+words.txt:Zone.Identifier
+__pycache__/

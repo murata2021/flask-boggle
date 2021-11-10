@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Boggle</title>
+    <link rel="stylesheet" href="/static/app.css">
+  </head>
+
+  <body>
+    <section id="boggle">
+
+      <table class="board">
+        <tbody>
+          {% for row in board %}
+          <tr>
+            {% for cell in row %}
+            <td>{{ cell }}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <br>
+      <br>
+
+      <form id="formId" method="POST" style="display: block">
+        <input type="text" name="word">
+        <button>Submit</button>
+      </form>
+
+      <!-- <p id="response">Response: {{check_answer}}</p> -->
+      <p id="nplays">So far this game has been played {{nplays}} time(s)</p>
+      <p id="displayScore">Your score is: 0</p>
+      <p id="highscore">Highscore {{highscore}}</p>
+      <p id="timer">Time: <span></span></p>
+
+      <section id="message">
+        
+      </section>
+
+      <p>Word List</p>
+
+      <ul>
+        
+      </ul>
+
+    </section>
+    <script src="https://unpkg.com/axios@0.19.0/dist/axios.js"></script>
+    <script src="/static/app.js"></script>
+
+  </body>
+</html>
